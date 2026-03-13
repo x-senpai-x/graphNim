@@ -20,6 +20,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Web UI
+
+```bash
+streamlit run app.py
+```
+
+Opens a browser with:
+- **Sidebar**: pick a graph template (H1, F1, G1, etc.) and adjust edge weights with sliders
+- **Graph panel**: NetworkX visualization with edge weight labels; the winning vertex is highlighted red and reduced edges in orange after solving
+- **Result panel**: WINNING / LOSING / UNKNOWN badge, the concrete winning move as a table, and the theorem reference
+
 ## CLI Usage
 
 ```bash
